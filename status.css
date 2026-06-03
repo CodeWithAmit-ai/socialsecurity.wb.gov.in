@@ -1,0 +1,26 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+#box{
+    width:100vw;
+    height:100vh;
+
+    background-image:url("https://akm-img-a-in.tosshub.com/indiatoday/images/story/201905/narendra_modui.jpeg?size=1200:675");
+    background-size:cover;
+
+    animation:slideBanner 10s infinite alternate ease-in-out;
+}
+
+@keyframes slideBanner{
+
+    from{
+        background-position:left center;
+    }
+
+    to{
+        background-position:right center;
+    }
+
+}

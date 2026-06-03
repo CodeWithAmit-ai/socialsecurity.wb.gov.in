@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Annapurna Bhandar Application Form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="progress-container">
+      <div class="progress-bar">25%</div>
+    </div>
+    <div class="form-container">
+      <div class="form-header">
+        <h1>Annapurna Bhandar</h1>
+
+        <p>Application Form</p>
+      </div>
+
+      <form id="applicationForm">
+        <h2>Personal Information</h2>
+
+        <div class="grid">
+          <div>
+            <label> Applicant Name </label>
+
+            <input type="text" id="name" />
+          </div>
+
+          <div>
+            <label> Father / Husband Name </label>
+
+            <input type="text" id="guardian" />
+          </div>
+
+          <div>
+            <label> Date of Birth </label>
+
+            <input type="date" id="dob" />
+          </div>
+
+          <div>
+            <label> Gender </label>
+
+            <select id="gender">
+              <option>Select</option>
+
+              <option>Female</option>
+
+              <option>Male</option>
+
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <h2>Identity Details</h2>
+
+        <div class="grid">
+          <div>
+            <label> Aadhaar Number </label>
+
+            <input type="text" id="aadhaar" />
+          </div>
+
+          <div>
+            <label> Ration Card Number </label>
+
+            <input type="text" id="ration" />
+          </div>
+
+          <div>
+            <label> Mobile Number </label>
+
+            <input type="text" id="mobile" />
+          </div>
+        </div>
+
+        <h2>Address Details</h2>
+
+        <div class="grid">
+          <div>
+            <label> District </label>
+
+            <select id="district">
+              <option>Select District</option>
+
+              <option>Alipurduar</option>
+              <option>Bankura</option>
+              <option>Birbhum</option>
+              <option>Cooch Behar</option>
+              <option>Dakshin Dinajpur</option>
+              <option>Darjeeling</option>
+              <option>Hooghly</option>
+              <option>Howrah</option>
+              <option>Jalpaiguri</option>
+              <option>Jhargram</option>
+              <option>Kalimpong</option>
+              <option>Kolkata</option>
+              <option>Malda</option>
+              <option>Murshidabad</option>
+              <option>Nadia</option>
+              <option>North 24 Parganas</option>
+              <option>Paschim Bardhaman</option>
+              <option>Paschim Medinipur</option>
+              <option>Purba Bardhaman</option>
+              <option>Purba Medinipur</option>
+              <option>Purulia</option>
+              <option>South 24 Parganas</option>
+              <option>Uttar Dinajpur</option>
+            </select>
+          </div>
+
+          <div>
+            <label> Pincode </label>
+
+            <input type="text" id="pincode" />
+          </div>
+        </div>
+
+        <label> Full Address </label>
+
+        <textarea rows="5" id="address"> </textarea>
+
+        <h2>Upload Documents</h2>
+
+        <div class="grid">
+          <div>
+            <label> Upload Photo </label>
+
+            <input type="file" id="photoUpload" />
+
+            <img id="preview" width="120" />
+          </div>
+
+          <div>
+            <label> Upload Aadhaar </label>
+
+            <input type="file" />
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Application</button>
+        <button type="button" id="printBtn">Print Application</button>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
